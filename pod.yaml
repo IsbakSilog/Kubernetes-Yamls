@@ -1,0 +1,13 @@
+"pod.yaml" 12L, 167B                                                                                                       12,23         All
+apiVersion: v1
+kind: Pod
+metadata:
+  name: webserver
+  labels:
+     app: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    ports:
+    - containerPort: 80
